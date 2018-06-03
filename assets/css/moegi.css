@@ -25,6 +25,9 @@ a:hover {
 
 .blog-description {
     color: #999999;
+    padding: 27px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
 }
 
 .top-nav ul {
@@ -405,8 +408,21 @@ pre {
     top: 20%;
     margin-left: 400px;
     border-left: 1px solid #dddddd;
+    height: calc(100vh - 20%);
+    overflow-y: auto;
 }
-
+#toc::-webkit-scrollbar {
+    width: 5px;
+    height: 1px;
+}
+#toc::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: #dddddd;
+}
+#toc::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background: #EDEDED;
+}
 /* #toc:before {
     content: "目录";
     margin-left: 1em;
